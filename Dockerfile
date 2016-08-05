@@ -13,7 +13,6 @@ RUN apk --update add \
     && curl -L "https://storage.googleapis.com/kubernetes-release/release/v1.3.4/bin/linux/amd64/kubectl" -o "/usr/local/bin/kubectl" \
     && chmod +x "/usr/local/bin/kubectl" \
     && apk del py-pip \
-    && apk del --purge deps \
     && rm -rf /var/cache/apk/*
 
 

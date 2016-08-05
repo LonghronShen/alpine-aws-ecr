@@ -1,1 +1,1 @@
-# docker + alpine + aws cli + base64 + cut
+# docker + alpine + aws cli + kubectl

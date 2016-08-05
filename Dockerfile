@@ -6,10 +6,9 @@ RUN apk --update add \
     py-pip \
     jq \
 		coreutils \
+		groff \
     && pip install awscli \
     && apk del py-pip \
     && rm -rf /var/cache/apk/*
-
-RUN apk --update add groff
 
 # docker build -t axnux/alpine-aws-ecr:latest . #

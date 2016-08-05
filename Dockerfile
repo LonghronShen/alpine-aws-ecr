@@ -7,6 +7,7 @@ RUN apk --update add \
     jq \
 		coreutils \
 		groff \
+    curl \
     && pip install awscli \
     && apk del py-pip \
     && rm -rf /var/cache/apk/*

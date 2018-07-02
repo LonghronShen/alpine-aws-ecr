@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM docker:latest
 MAINTAINER xun "me@xun.my"
 
 RUN apk --update add \

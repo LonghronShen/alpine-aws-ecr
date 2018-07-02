@@ -4,6 +4,7 @@ MAINTAINER xun "me@xun.my"
 RUN apk --update add \
     python \
     py-pip \
+    git \
     jq \
 		coreutils \
 		groff \

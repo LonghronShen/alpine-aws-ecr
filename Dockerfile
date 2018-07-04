@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:stable-dind
 MAINTAINER xun "me@xun.my"
 
 RUN apk --update add \

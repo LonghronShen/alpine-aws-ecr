@@ -6,8 +6,9 @@ RUN apk --update add \
     py-pip \
     git \
     jq \
-		coreutils \
-		groff \
+    coreutils \
+    groff \
+    openssh-client \
     curl \
     bash \
     && pip install awscli \

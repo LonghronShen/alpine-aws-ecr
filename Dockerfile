@@ -6,6 +6,7 @@ RUN apk --update add \
     py-pip \
     git \
     jq \
+    perl \
     coreutils \
     groff \
     openssh-client \

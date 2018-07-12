@@ -16,7 +16,6 @@ RUN apk --update add \
     && pip install --upgrade awscli python-swiftclient setuptools distribute \
     && curl -L "https://storage.googleapis.com/kubernetes-release/release/v1.3.4/bin/linux/amd64/kubectl" -o "/usr/local/bin/kubectl" \
     && chmod +x "/usr/local/bin/kubectl" \
-    && apk del py-pip \
     && rm -rf /var/cache/apk/*
 
 

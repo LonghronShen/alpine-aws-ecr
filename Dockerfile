@@ -16,7 +16,7 @@ RUN apk --update add \
     tzdata \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \ 
     && echo "Asia/Shanghai" > /etc/timezone \
-    && pip install --upgrade awscli python_swiftclient \
+    && pip install --upgrade awscli python_swiftclient python-keystoneclient \
     && curl -L "https://storage.googleapis.com/kubernetes-release/release/v1.3.4/bin/linux/amd64/kubectl" -o "/usr/local/bin/kubectl" \
     && chmod +x "/usr/local/bin/kubectl" \
     && rm -rf /var/cache/apk/*

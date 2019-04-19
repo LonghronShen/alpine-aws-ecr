@@ -13,7 +13,7 @@ RUN apk --update add \
     openssh-client \
     curl \
     bash \
-    tzdata gcc g++ python-dev \
+    tzdata python-dev alpine-sdk \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \ 
     && echo "Asia/Shanghai" > /etc/timezone \
     && pip install --upgrade awscli python_swiftclient python-keystoneclient \
